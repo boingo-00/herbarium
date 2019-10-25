@@ -1,0 +1,8 @@
+<html>
+  <head>
+    <title>{% trans "Herbarium — self-hosted photo hosting" %}</title>
+    <meta content="">
+    <style></style>
+  </head>
+  <body></body>
+</html>
