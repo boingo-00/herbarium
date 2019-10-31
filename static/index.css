@@ -1,0 +1,67 @@
+body {
+    background-color: #16181a;
+    margin: 0;
+    font-family: 'DejaVu Sans';
+    color: white;
+    font-size: 18pt;
+}
+
+#head {
+    display: flex;
+    width: 90%;
+    height: 60px;
+    background-color: #42826D;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 20px 20px;
+} 
+
+#logo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#logo-pic {
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#logo-name {
+    margin-left: 5px;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#welcome {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wchead {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 72pt;
+    text-align: center;
+}
+
+#wcscr {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+#sellingtext {
+    text-align: justify;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 50px;
+}
