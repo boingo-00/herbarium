@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/<username>/post_id_<id>/<filename>
-    return '{0}/post_id_{1}/{2}'.format(instance.user.username, instance.post.id, filename)
+    return '{0}/{1}/{2}'.format(instance.user.username, instance.post.id, filename)
 
 class post(models.Model):
     user    = models.ForeignKey(User, on_delete=models.CASCADE)
