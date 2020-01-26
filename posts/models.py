@@ -6,7 +6,7 @@ def user_directory_path(instance, filename):
     return '{0}/post_id_{1}/{2}'.format(User.username, instance.post.id, filename)
 
 class post(models.Model):
-    user    = models.ForeignKey(User, on_delete=models.CASCADE, null=False, blank=True)
+    user    = models.ForeignKey(User, on_delete=models.CASCADE)
     desc    = models.CharField(max_length=3000, verbose_name='Post Description')
     hidden  = models.BooleanField(verbose_name='Hidden post')
     pubdate = models.DateTimeField('Published at:', auto_now=True)
@@ -16,6 +16,6 @@ class post(models.Model):
     
 
 class album(models.Model):
-    user    = models.ForeignKey(User, on_delete=models.CASCADE, null=False, blank=True)
+    user    = models.ForeignKey(User, on_delete=models.CASCADE)
     post    = models.ForeignKey(post, default=None, on_delete=models.CASCADE)
     photo   = models.ImageField(upload_to=user_directory_path)
